@@ -23,7 +23,8 @@ const Layout: FC<LayoutProps> = (props) => {
         <title>{`여기는 ${location.pathname}`}</title>
       </Helmet>*/}
       <nav>
-        <button onClick={() => navigate("/")}>home</button>
+        <button onClick={() => navigate("/")}>main</button>
+        <button onClick={() => navigate("/home")}>home</button>
         <button onClick={() => navigate("/profile")}>profile</button>
       </nav>
       {children}
